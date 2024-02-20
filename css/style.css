@@ -1,9 +1,44 @@
+html {
+    cursor: url("") default;
+}
+
 body {
     font-family: "Pixelify Sans", sans-serif;
     margin: 0;
 }
 
+a:hover {
+    cursor: url("") default;
+}
+.bg {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgb(8, 3, 3) 100%),url("/img/bg/BGstars.gif");
+    background-attachment: fixed;
+    display: block;
+    font-family: MS PGothic;
+    text-align: center;
+}
+
+.scroll_d {
+    animation: diag 60s linear infinite;
+}
+
+@keyframes diag {
+    0% {
+      background-position-x: 100%;
+      background-position-y: 0%;
+    }
+    100% {
+      background-position-x: 0%;
+      background-position-y: 100%;
+    }
+}
+
 #container {
     max-width: 1000px;
     margin: auto;
+}
+
+#flex {
+    display: flex;
+    width: 100%;
 }
